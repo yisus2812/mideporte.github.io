@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Deportes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title-search">
+            <img src="/image/1.JPG" alt="Logo de la tienda"> <!-- Imagen en lugar del título -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+                <button id="loginButton">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/html/tienda.html">Tienda</a></li>
+            <li><a href="/html/quienessomos.html">Quienes Somos</a></li>
+            <li><a href="/html/contacto.html">Contacto</a></li>
+            <li><a href="/html/comprar.html">¿Como comprar en mideporte.pe?</a></li>
+            <li><a href="/html/blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section class="central-section">
+        <h2 class="central-subtitle">Compra con estos sencillos pasos
+        desde la comodidad donde te encuentres.</h2>
+        <div class="columns">
+            <div class="column">
+                <h3>Comprar desde el Móvil</h3>
+                <p>Sigue estos pasos para comprar desde donde estés usando tu Móvil</p>
+                <div class="video-container">
+                    <iframe width="56" height="315" src="https://www.youtube.com/embed/BeDgs2YHkQ8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="column">
+                <h3>Comprar desde la Pc / Láptop</h3>
+                <p>Sigue estos pasos para comprar desde donde estés usando tu PC</p>
+                <div class="video-container">
+                    <iframe width="56" height="315" src="https://www.youtube.com/embed/2B1oUJCtCRw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto-horario">
+        <div class="columna">
+            <h3>Mideporte.pe</h3>
+            <p>Somos una Tienda especializada en producción y distribución de material deportivo.</p>
+            <p>RAZÓN SOCIAL:</p>
+            <p>MI DEPORTE PERU E.I.R.L.</p>
+            <p>RUC: 20608922114</p>
+            <img src="/image/23.jpg" alt="Imagen de contacto">
+        </div>
+        <div class="columna">
+            <h3>Contactanos</h3>
+            <p>Teléfono: 967 116 758</p>
+            <p>Fijo: (01) 7482391</p>
+            <p>Dirección: Jr. General Varela 1904 Breña (En la misma cuadra de la comisaria de Breña)</p>
+            <p>Email: ventas@mideporte.pe</p>
+        </div>
+        <div class="columna">
+            <h3>HORARIO DE ATENCIÓN TIENDA BREÑA</h3>
+            <p>Lunes a Sábado:
+            10:00 am – 8:00 pm</p>
+            <p>Domingo: 10:00 am – 5:00 pm</p>
+            <p>Envíos a nivel nacional</p>
+            <p>* SameDay (Realiza tu pedido antes de las 12pm y recibe el mismo día)
+                * Cambios y Devoluciones gratis (hasta 7 días)</p>
+        </div>
+        <div class="columna">
+            <h3>Nuestra Empresa</h3>
+            <p>Sobre Nosotros</p>
+            <p>Política de Privacidad</p>
+            <p>Términos y Condiciones</p>
+            <p>Contáctenos</p>
+        </div>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="login-register">
+                <div class="column">
+                    <h3>Registrarse</h3>
+                    <p>Correo electrónico:</p>
+                    <input type="email" id="registerEmail" placeholder="Ingrese su correo electrónico">
+                    <p>Registrar como un nuevo usuario:</p>
+                    <p>Contraseña:</p>
+                    <input type="password" id="registerPassword" placeholder="Ingrese su contraseña">
+                    <button id="registerButton">Guardar</button>
+                </div>
+                <div class="column">
+                    <h3>Acceder</h3>
+                    <p>Nombre de usuario o correo electrónico:</p>
+                    <input type="text" id="loginEmail" placeholder="Ingrese su nombre de usuario o correo electrónico">
+                    <p>Contraseña:</p>
+                    <input type="password" id="loginPassword" placeholder="Ingrese su contraseña">
+                    <button id="loginSubmitButton">Acceder</button>
+                    <p id="errorMessage" style="color: red; display: none;">Nombre de usuario o contraseña incorrectos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
